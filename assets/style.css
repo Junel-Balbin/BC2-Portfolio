@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/jeff-guab.jpg);
+    background-position: center;
+    background-size: 3000px;
+    background-repeat: no-repeat;
+}
+
+#header {
+
+}
+
+footer {
+    
+}
