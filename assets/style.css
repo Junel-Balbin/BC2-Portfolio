@@ -8,9 +8,19 @@ body {
     background-image: url(./images/jeff-guab2.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 3100px;
-    background-color: rgb(73, 124, 118);
+    background-size: 3700px;
+    background-color: rgb(201, 227, 224);
 }
+
+
+/*Credit goes to developedbyed Youtube Channel*/
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*_________________________________________________________________________________________*/
+
 
 #header {
     display: flex;
@@ -22,10 +32,7 @@ body {
 
 #header h1 {
     display: flex;
-    color: rgb(15, 117, 135);
-}
-#header h1:hover {
-    color: white;
+    color: rgba(59,156,140,1);
 }
 
 #header h1 a {
@@ -33,9 +40,16 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#header h1 a:hover {
+    color: white;
+    font-size: 41px;
+    font-weight: bold;
+    font-style: normal;
+}
+
 #header nav {
     display: flex;
-    padding-top: 8px;
+    padding-top: 13px;
     margin-right: 40px;
 }
 
@@ -43,14 +57,50 @@ body {
     margin-top: 20px;
 }
 
+a {
+    color: rgb(44, 46, 45);
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+}
+
+a:hover {
+    color: white;
+    text-decoration: 3px underline black;
+    text-underline-offset: 10px;
+    font-style: italic;
+}
+
+
+/*_________________________________________________________________________________________*/
+
+
 /*Experimented with Flexbox & Positioning.  Still not satisfied.*/
 .content {
     display: flex;
     flex-wrap: wrap;
     position: relative;
     justify-content: space-around;
-    margin-top: 900px;
+    margin-top: 700px;
     text-align: center;
+}
+
+.content ul {
+    
+    list-style-type: none;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    opacity: 0.3;
+}
+
+.content ul:hover {
+    font-size: 26px;
+    font-weight: bold;
+    box-shadow: 0px 0px 14px 16px rgba(228, 239, 239, 0.5);
 }
 
 .second-content {
@@ -58,36 +108,55 @@ body {
     flex-wrap: wrap;
     position: relative;
     justify-content: space-around;
-    margin-top: 30px;
-    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 300px;
     text-align: center;
 }
 
+.second-content ul {
+    
+    list-style-type: none;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0.3;
+}
+
+.second-content ul:hover {
+    font-size: 28px;
+    font-weight: bold;
+    box-shadow: 0px 0px 14px 16px rgba(228, 239, 239, 0.5);
+}
+
+.second-content h2:hover {
+    color: rgba(59,156,140,1);
+}
+
+
+
+/*_________________________________________________________________________________________*/
+
+
 h2 {
     color: white;
+    font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h2:hover {
-    color: rgba(59,156,140,1);
-}
-
-a {
-    color: rgb(44, 46, 45);
-    text-decoration: none;
-    font-size: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 20px;
-}
-
-a:hover {
-    color: white
+    color: black;
+    font-size: 31px;
 }
 
 p {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+
+/*_________________________________________________________________________________________*/
+
 
 /*Resource for transition: W3Schools & Stack Overflow*/
 img {
@@ -107,6 +176,10 @@ img:hover {
     box-shadow: 0px 0px 12px 4px rgba(59,156,140,1);
 }
 
+
+/*___________________________________________________________________________________________*/
+
+
 footer {
     font-weight: bold;
     background-color: white;
@@ -115,14 +188,16 @@ footer {
     border: 5px;
     border-radius: 10px;
     opacity: 0.2;
+    box-shadow: inset 0px 0px 10px 12px rgba(4,5,5,0.5);
 }
 
 footer p {
+    background-color: rgba(182, 182, 182, 0.2); 
     color: black;
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 footer:hover {
-    box-shadow: inset 0px 0px 10px 12px rgba(4,5,5,0.5);
+    box-shadow: 0px 0px 12px 14px rgba(228, 239, 239, 0.5);
 }
