@@ -41,7 +41,30 @@ body {
 #header ul {
     margin-top: 20px;
 }
-    
+
+/*Experimented with Flexbox & Positioning.  Still not satisfied.*/
+.content {
+    display: flex;
+    position: relative;
+    margin-left: 300px;
+    margin-top: 500px;
+}
+
+.content > * {
+    flex-basis: 100%;
+}
+
+.second-content {
+    display: flex;
+    position: relative;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+.second-content > * {
+    flex-basis: 100%;
+}
+
 h2 {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -52,7 +75,7 @@ h2:hover {
 }
 
 a {
-    color: rgb(15, 117, 135);
+    color: rgb(44, 46, 45);
     text-decoration: none;
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -60,7 +83,7 @@ a {
 }
 
 a:hover {
-    color: rgb(13,80,32);
+    color: white
 }
 
 p {
@@ -70,8 +93,8 @@ p {
 
 /*Resource for transition: W3Schools & Stack Overflow*/
 img {
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
     border: 20px;
     border-radius: 10px;
     transition: width 0.5s, height 0.5s;
@@ -81,8 +104,8 @@ img {
 
 /*At first used % but made the the background image jump after hovering. Experimented using px instead*/
 img:hover {
-    width: 250px;
-    height: 150px;
+    width: 450px;
+    height: 350px;
     box-shadow: 0px 0px 12px 4px rgba(59,156,140,1);
 }
 
