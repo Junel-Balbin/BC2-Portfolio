@@ -8,7 +8,7 @@ body {
     background-image: url(./images/jeff-guab2.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 3700px;
+    background-size: 4100px;
     background-color: rgb(201, 227, 224);
 }
 
@@ -19,15 +19,15 @@ html {
 }
 
 
-/*_________________________________________________________________________________________*/
+/*_______________________________________________________________________________*/
 
 
 #header {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
     padding: 20px;
-    margin-left: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #header h1 {
@@ -50,7 +50,7 @@ html {
 #header nav {
     display: flex;
     padding-top: 13px;
-    margin-right: 40px;
+    margin-right: 5x;
 }
 
 #header ul {
@@ -73,7 +73,7 @@ a:hover {
 }
 
 
-/*_________________________________________________________________________________________*/
+/*_______________________________________________________________________________*/
 
 
 /*Experimented with Flexbox & Positioning.  Still not satisfied.*/
@@ -82,7 +82,7 @@ a:hover {
     flex-wrap: wrap;
     position: relative;
     justify-content: space-around;
-    margin-top: 700px;
+    margin-top: 740px;
     text-align: center;
 }
 
@@ -108,8 +108,8 @@ a:hover {
     flex-wrap: wrap;
     position: relative;
     justify-content: space-around;
-    margin-top: 100px;
-    margin-bottom: 300px;
+    margin-top: 80px;
+    margin-bottom: 100px;
     text-align: center;
 }
 
@@ -123,6 +123,10 @@ a:hover {
     opacity: 0.3;
 }
 
+.second-content a {
+    padding: 0px;
+}
+
 .second-content ul:hover {
     font-size: 28px;
     font-weight: bold;
@@ -134,8 +138,7 @@ a:hover {
 }
 
 
-
-/*_________________________________________________________________________________________*/
+/*_______________________________________________________________________________*/
 
 
 h2 {
@@ -155,7 +158,7 @@ p {
 }
 
 
-/*_________________________________________________________________________________________*/
+/*_______________________________________________________________________________*/
 
 
 /*Resource for transition: W3Schools & Stack Overflow*/
@@ -173,31 +176,54 @@ img {
 img:hover {
     width: 450px;
     height: 350px;
-    box-shadow: 0px 0px 12px 4px rgba(59,156,140,1);
+    box-shadow: 0px 0px 30px 12px rgba(59,156,140,1);
 }
 
 
-/*___________________________________________________________________________________________*/
+/*_______________________________________________________________________________*/
 
 
-footer {
+.footer {
+    display: flex;
+    justify-content: space-around;
     font-weight: bold;
     background-color: white;
-    padding: 5px;
-    text-align: center;
+    padding: 18px;
     border: 5px;
-    border-radius: 10px;
-    opacity: 0.2;
-    box-shadow: inset 0px 0px 10px 12px rgba(4,5,5,0.5);
+    border-radius: 15px;
+    opacity: 0.3;
 }
 
-footer p {
-    background-color: rgba(182, 182, 182, 0.2); 
+.footer h2 {
     color: black;
+    padding-left: 70px;
+}
+
+.footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 20px;
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-footer:hover {
-    box-shadow: 0px 0px 12px 14px rgba(228, 239, 239, 0.5);
+.footer h2 a {
+    font-size: 30px;
+    color: black;
+}
+
+.footer ul li {
+    padding-left: 100px;
+}
+
+.footer ul a {
+    font-size: 30px;
+    color: black;
+}
+
+.footer ul a:hover {
+    text-decoration: 3px underline black;
+    text-underline-offset: 2px;
+    color: black;
 }
