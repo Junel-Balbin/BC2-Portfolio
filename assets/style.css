@@ -1,3 +1,13 @@
+:root {
+    --font: 'Trebuchet MS', 'Lucida Sans Unicode', 
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --list_shadow: 0px 0px 14px 16px rgba(228, 239, 239, 0.5);
+    --image_shadow: 0px 0px 30px 12px rgba(59,156,140,1);
+    --a_link_color: black;
+    --a_link_hover: white;
+    --bg_color: white;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -33,11 +43,11 @@ html {
 
 #header h1 a {
     font-size: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--font)
 }
 
 #header h1 a:hover {
-    color: white;
+    color: var(--a_link_hover);
     font-size: 41px;
     font-weight: bold;
     font-style: normal;
@@ -53,15 +63,15 @@ html {
 }
 
 #header a {
-    color: rgb(44, 46, 45);
+    color: var(--a_link_color);
     text-decoration: none;
     font-size: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--font);
     padding: 20px;
 }
 
 #header a:hover {
-    color: white;
+    color: var(--a_link_hover);
     text-decoration: 3px underline black;
     text-underline-offset: 10px;
     font-style: italic;
@@ -82,17 +92,18 @@ html {
     
     list-style-type: none;
     font-size: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: white;
+    font-family: var(--font);
+    background-color: var(--bg_color);
     border: 1px solid black;
     border-radius: 10px;
+    padding: 2px;
     opacity: 0.3;
 }
 
 .content ul:hover {
     font-size: 26px;
     font-weight: bold;
-    box-shadow: 0px 0px 14px 16px rgba(228, 239, 239, 0.5);
+    box-shadow: var(--list_shadow);
 }
 
 .second-content {
@@ -105,22 +116,6 @@ html {
     text-align: center;
 }
 
-.second-content ul {
-    
-    list-style-type: none;
-    font-size: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: white;
-    border-radius: 10px;
-    opacity: 0.3;
-}
-
-.second-content ul:hover {
-    font-size: 28px;
-    font-weight: bold;
-    box-shadow: 0px 0px 14px 16px rgba(228, 239, 239, 0.5);
-}
-
 .second-content h2:hover {
     color: rgba(59,156,140,1);
 }
@@ -130,7 +125,7 @@ html {
 h2 {
     color: white;
     font-size: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--font);
 }
 
 h2:hover {
@@ -152,7 +147,7 @@ img {
 img:hover {
     width: 450px;
     height: 350px;
-    box-shadow: 0px 0px 30px 12px rgba(59,156,140,1);
+    box-shadow: var(--image_shadow);
 }
 
 /*_______________________________________________________________________________*/
@@ -161,26 +156,28 @@ img:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: white;
+    background-color: var(--bg_color);
     opacity: 0.4;
 }
 
 .footer ul {
     display: flex;
     list-style-type: none;
-
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--font);
 }
 
 .footer ul a {
     font-size: 28px;
-    color: black;
+    color: var(--a_link_color);
     padding: 10px 10px 10px 2px;
+    text-decoration: none;
 }
 
 .footer ul a:hover {
     text-decoration: 3px underline black;
     text-underline-offset: 3px;
+    font-style: italic;
+    font-weight: bold;
     color: black;
 }
 
@@ -188,4 +185,14 @@ img:hover {
     width: 28px;
     height: 28px;
     margin-top: 2px;
+}
+
+/*_______________________________________________________________________________*/
+
+@media screen and (max-width: 700px) {
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
 }
