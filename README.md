@@ -3,7 +3,7 @@
 <img src="./assets/images/banner.png">
 
 ## Description:
-* I was not completely prepared to create a professional portfolio yet, so I decided to build my own mockup portfolio instead.  This would give me a chance to practice the markup and style sheet languages I had recently learned in order to build something better in the future.  It was also a perfect opportunity to explore my creativity and right away I knew I wanted to give it an 80's/90's Asian Anime theme and use it to tell a story.
+* I was not completely prepared to create a professional portfolio yet, so I decided to build my own mockup portfolio instead.  This would give me a chance to practice my new skills I had recently learned in order to build something better in the future.  It was also a perfect opportunity to explore my creativity and right away I knew I wanted to give it an 80's/90's Anime theme and use it to tell a story.
 
 ## Installation:
 * On a web browser please follow link to begin exploring. [JRB Portfolio](https://junel-balbin.github.io/Junel-Balbin-Portfolio/) 

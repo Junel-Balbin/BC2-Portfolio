@@ -1,3 +1,5 @@
+/*Organized and Consolidated the selectors.*/
+/*:root was not as easy as I thought.*/
 :root {
     --font: 'Trebuchet MS', 'Lucida Sans Unicode', 
     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -18,8 +20,7 @@ html {
     box-sizing: border-box;
 }
 
-/*_______________________________________________________________________________*/
-
+/*Background Image was very difficult to implement.  Had to figure out the sizing for Responsive Design.*/
 body {
     background-image: url(./images/jeff-guab2.jpg);
     background-position: center;
@@ -28,7 +29,30 @@ body {
     background-color: rgb(201, 227, 224);
 }
 
-/*_______________________________________________________________________________*/
+h2 {
+    color: white;
+    font-size: 30px;
+    font-family: var(--font);
+}
+
+h2:hover {
+    color: black;
+    font-size: 31px;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    border: 20px;
+    border-radius: 10px;
+    transition: width 0.5s, height 0.5s;
+}
+
+img:hover {
+    width: 450px;
+    height: 350px;
+    box-shadow: var(--image_shadow);
+}
 
 #header {
     display: flex;
@@ -79,8 +103,6 @@ body {
     font-style: italic;
 }
 
-/*_______________________________________________________________________________*/
-
 .content {
     display: flex;
     flex-wrap: wrap;
@@ -121,37 +143,6 @@ body {
     color: rgba(59,156,140,1);
 }
 
-/*_______________________________________________________________________________*/
-
-h2 {
-    color: white;
-    font-size: 30px;
-    font-family: var(--font);
-}
-
-h2:hover {
-    color: black;
-    font-size: 31px;
-}
-
-/*_______________________________________________________________________________*/
-
-img {
-    width: 300px;
-    height: 200px;
-    border: 20px;
-    border-radius: 10px;
-    transition: width 0.5s, height 0.5s;
-}
-
-img:hover {
-    width: 450px;
-    height: 350px;
-    box-shadow: var(--image_shadow);
-}
-
-/*_______________________________________________________________________________*/
-
 .footer {
     display: flex;
     flex-wrap: wrap;
@@ -187,8 +178,8 @@ img:hover {
     margin-top: 2px;
 }
 
-/*_______________________________________________________________________________*/
-
+/*Troubleshooting ul on the .content only realizing I needed to use .about & .hobbies.*/
+/*Experimenting with @media query. Getting better.*/
 @media screen and (max-width: 800px) {
 
     .content {
@@ -209,3 +200,4 @@ img:hover {
         justify-content: center;
     }
 }
+/*Must keep lines under 200.*/
