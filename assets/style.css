@@ -8,11 +8,17 @@
     --bg_color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+
+/*_______________________________________________________________________________*/
 
 body {
     background-image: url(./images/jeff-guab2.jpg);
@@ -20,10 +26,6 @@ body {
     background-repeat: no-repeat;
     background-size: 4100px;
     background-color: rgb(201, 227, 224);
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 /*_______________________________________________________________________________*/
@@ -89,7 +91,6 @@ html {
 }
 
 .content ul {
-    
     list-style-type: none;
     font-size: 25px;
     font-family: var(--font);
@@ -143,7 +144,6 @@ img {
     transition: width 0.5s, height 0.5s;
 }
 
-
 img:hover {
     width: 450px;
     height: 350px;
@@ -195,4 +195,18 @@ img:hover {
         display: flex;
         flex-direction: column;
     }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hobbies {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
