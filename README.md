@@ -8,14 +8,14 @@
 ## Installation:
 * On a web browser please follow link to begin exploring. [JRB Portfolio](https://junel-balbin.github.io/Junel-Balbin-Portfolio/) 
 * Accessible on any mobile device and tablet.
-
+<img src="./assets/images/mobileview.gif">
 
 ## Usage:
-* To use this website. hover your cursor over the Navigation Header on the upper right and select any of the four options you are interested in.
-<img src="./assets/images/navlink.png">
+* To use this website. Hover your cursor over the Navigation Header on the upper right and select any of the four options you are interested in.
+<img src="./assets/images/navlink2.png">
 
 * Contact Information will be found at the bottom of the page.  You can select Contact on the Navigation Header.
-<img src="./assets/images/contactlink.png">
+<img src="./assets/images/contactlink2.png">
 
 
 ## Contributing:
@@ -27,6 +27,8 @@
 
 * Idea snippets and notes from EdX and UCB.
 * [Background Image](https://www.pexels.com/photo/aerial-photography-of-a-mountain-2407636/) Provided by Filipino Photographer Jeff Guab. Image of  Mount Mayon Volcano. Located in the Province of Albay, Bicol Region of the Philippines.
+
+* Style CSS Reset provided by [Eric Meyer](https://meyerweb.com/eric/tools/css/reset/).
 
 * Zoom Image Hover behavior idea from [Stackoverflow](https://stackoverflow.com/questions/40852917/css-enlarging-images-on-hover) and [w3schools](https://www.w3schools.com/howto/howto_css_zoom_hover.asp).
 
