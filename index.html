@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
+
+<!--Audio was a late addition.-->
+<audio autoplay controls loop>
+    <source src="./assets/sound/Forest.mp3" type="audio/mpeg">
+    <source src="./assets/sound/Forest.ogg" type="audio/ogg">
+</audio>
+
 <body>
 <!--Added a CSS Reset.-->
 <!--Indented as best as I could.-->
@@ -24,8 +31,32 @@
                 </ul>
             </nav>
     </header>
+
+
+<!--*NOT MY CODES: Animation codes Credit goes to Juan Carlos Pleitez & Steven Roberts.*-->
+<!--https://blog.devgenius.io/how-to-create-animated-birds-on-a-web-app-with-css-2415627acfa9-->
+<!--https://codepen.io/matchboxhero/pen/RLebOY-->
+    <div class="content">
+        <div class="bird-container bird-container-one">
+            <div class="bird bird-one"></div>
+        </div>
+        <div class="bird-container bird-container-two">
+            <div class="bird bird-two"></div>
+        </div>
+        <div class="bird-container bird-container-three">
+            <div class="bird bird-three"></div>
+        </div>
+        <div class="bird-container bird-container-four">
+            <div class="bird bird-four"></div>
+        </div>
+    </div>
+<!--*NOT MY CODES: Animation codes Credit goes to Juan Carlos Pleitez & Steven Roberts.*-->
+<!--https://blog.devgenius.io/how-to-create-animated-birds-on-a-web-app-with-css-2415627acfa9-->
+<!--https://codepen.io/matchboxhero/pen/RLebOY-->
+
   
-<!--Decided to use a class attribute on main-->
+
+<!--Decided to use a class attribute on <main>.-->
 <!--Experimented with <div>-->
     <main class="content">
             <div id="about" class="about">
@@ -52,7 +83,8 @@
                     </ul>
             </div>
     </main>
-<!--Experimented with <div>-->
+
+<!--Experimented with <div>.-->
     <section class="second-content">
         <div id="project" class="project1">
             <h2>Project 1</h2>
@@ -78,9 +110,9 @@
             <li><a href="https://www.instagram.com/lennuj_/">Social</li></a>
         </ul>
     </footer>
-<!--Add a few <br> to give space between the <footer> and the bottom of the page.-->
+<!--Added a few <br> to give space between the <footer> and bottom page.-->
     <br>
     <br>
+
 </body>
 </html>
-<!--Lines must be under 100 to keep it simple.-->

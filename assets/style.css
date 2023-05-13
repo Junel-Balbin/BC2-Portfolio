@@ -20,6 +20,11 @@ html {
     box-sizing: border-box;
 }
 
+audio {
+    width: 100px;
+    height: 20px;
+}
+
 /*Background Image was very difficult to implement.  Had to figure out the sizing for Responsive Design.*/
 body {
     background-image: url(./images/jeff-guab2.jpg);
@@ -28,6 +33,147 @@ body {
     background-size: 4100px;
     background-color: rgb(201, 227, 224);
 }
+
+/*NOT MY CODES: Animation codes Credit goes to Juan Carlos Pleitez & Steven Roberts*/
+/*https://blog.devgenius.io/how-to-create-animated-birds-on-a-web-app-with-css-2415627acfa9*/
+/*https://codepen.io/matchboxhero/pen/RLebOY*/
+.bird {
+    background-image: url(./images/birds3.png); /*Removed white background from original image.*/
+    background-size: auto 100%;
+    margin-top: -200px; /*Added to fit inside the empty space between Navigation Bar and Content.*/
+    width: 40px; /*Changed from 88px to 40px.*/
+    height: 65px; /*Changed from 125px to 65px.*/
+    will-change: background-position;
+
+    animation-name: fly-cycle;
+    animation-timing-function: steps(20); /*Made a change from 10 to 20 for smoother motion*/
+    animation-iteration-count: infinite;
+}
+
+.bird-one {
+    animation-duration: 2s; /*Changed from 1s to 2s.*/
+    animation-delay: -0.5s;
+}
+
+.bird-two {
+    animation-duration: 1s; /*Changed from 0.9s to 1s.*/
+    animation-delay: -0.75s;
+}
+
+.bird-three {
+    animation-duration: 1.25s;
+    animation-delay: -0.25;
+}
+
+.bird-four {
+    animation-duration: 1.1s;
+    animation-delay: -0.5;
+}
+
+.bird-container {
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    transform: scale(0) translateX(-10vw);
+    will-change: transform;
+
+    animation-name: fly-right-one;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.bird-container-one {
+    animation-duration: 15s;
+    animation-delay: 5s; /*Changed from 0s to 5s.*/
+}
+
+.bird-container-two {
+    animation-duration: 16s;
+    animation-delay: 1s;
+}
+
+.bird-container-three {
+    animation-duration: 14.6s;
+    animation-delay: 9.5s;
+}
+
+.bird-container-four {
+    animation-duration: 16s;
+    animation-delay: 8.25s; /*Changed from 10.25s to 8.25s.*/
+}
+
+/*I still need to study and research more on how Animation, @keyframes and transform all work together.*/
+@keyframes fly-cycle {
+    100% {
+        background-position: -900px 0;
+    }
+}
+
+@keyframes fly-right-one {
+    0% {
+        transform: scale(0.3) translateX(-10vw);
+    }
+
+    10% {
+        transform: translateY(2vh) translateX(10vw) scale(0.4);
+    }
+
+    20% {
+        transform: translateY(0vh) translateX(30vw) scale(0.5);
+    }
+
+    30% {
+        transform: translateY(4vh) translateX(50vw) scale(0.6);
+    }
+
+    40% {
+        transform: translateY(2vh) translateX(70vw) scale(0.6);
+    }
+
+    50% {
+        transform: translateY(0vh) translateX(90vw) scale(0.6);
+    }
+
+    60% {
+        transform: translateY(0vh) translateX(110vw) scale(0.6);
+    }
+
+    100% {
+        transform: translateY(0vh) translateX(110vw) scale(0.6);
+    }
+}
+
+@keyframes fly-right-two {
+    0% {
+        transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+    }
+
+    10% {
+        transform: translateY(0vh) translateX(10vw) scale(0.4);
+    }
+    20% {
+        transform: translateY(-4vh) translateX(30vw) scale(0.6);
+    }
+    30% {
+        transform: translateY(1vh) translateX(50vw) scale(0.45);
+    }
+    40% {
+        transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+    }
+    50% {
+        transform: translateY(0vh) translateX(90vw) scale(0.45);
+    }
+    50% {
+        transform: translateY(0vh) translateX(110vw) scale(0.45);
+    }
+    100% {
+        transform: translateY(0vh) translateX(110vw) scale(0.45);
+    }
+}
+/*NOT MY CODES: Animation codes Credit goes to Juan Carlos Pleitez & Steven Roberts*/
+/*https://blog.devgenius.io/how-to-create-animated-birds-on-a-web-app-with-css-2415627acfa9*/
+/*https://codepen.io/matchboxhero/pen/RLebOY*/
+/*Animation codes from Juan Carlos Pleitez & Steven Roberts*/
 
 h2 {
     color: white;
@@ -103,12 +249,13 @@ img:hover {
     font-style: italic;
 }
 
+/*Specificity was crucial for everything to work.  It took some time but I managed in the end.*/
 .content {
     display: flex;
     flex-wrap: wrap;
     position: relative;
     justify-content: space-around;
-    margin-top: 800px;
+    margin-top: 400px;
     text-align: center;
 }
 
@@ -200,4 +347,3 @@ img:hover {
         justify-content: center;
     }
 }
-/*Must keep lines under 200.*/
