@@ -34,15 +34,15 @@
 [Steven Roberts](https://codepen.io/matchboxhero/pen/RLebOY).
 <img src="./assets/images/sprites.png">
 
-* Audio Forest Effects provide by [uppbeat.io](https://uppbeat.io/browse/sfx/forest) and instructions from [w3chools](https://www.w3schools.com/tags/tag_audio.asp). 
-
 * [Background Image](https://www.pexels.com/photo/aerial-photography-of-a-mountain-2407636/) Provided by Filipino Photographer Jeff Guab. Image of  Mount Mayon Volcano. Located in the Province of Albay, Bicol Region of the Philippines.
 
-* Style CSS Reset provided by [Eric Meyer](https://meyerweb.com/eric/tools/css/reset/).
+* Audio Forest Effects provided by [uppbeat.io](https://uppbeat.io/browse/sfx/forest) and instructions from [w3chools](https://www.w3schools.com/tags/tag_audio.asp). 
 
 * Zoom Image Hover behavior idea from [Stackoverflow](https://stackoverflow.com/questions/40852917/css-enlarging-images-on-hover) and [w3schools](https://www.w3schools.com/howto/howto_css_zoom_hover.asp).
 
 * [Youtube developbyed](https://www.youtube.com/watch?v=Xc6G3oV24yE) HTML Scroll Behavior.
+
+* Style CSS Reset provided by [Eric Meyer](https://meyerweb.com/eric/tools/css/reset/).
 
 * [Banner Maker](https://banner.godori.dev/) Banner for README.
 
@@ -52,7 +52,7 @@
 * [Project 1 Image](https://wallpapercave.com/w/wp9145341)
 . [Project 1 Image](https://wallpapercave.com/w/wp10598062).
 
-* [Project 2 Image](https://www.reddit.com/r/wallpaper/comments/k4sjlj/anime_city_street_3840x2160/).
+* [Project 2 Image](https://www.reddit.com/r/wallpaper/comments/k4sjlj/anime_city_street_3840x2160/)
 . [Project 2 Image](https://wallpapers.com/wallpapers/cool-aesthetic-japanese-anime-city-o6nokrk4nduiinvx.html).
 
 

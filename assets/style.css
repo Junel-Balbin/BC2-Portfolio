@@ -38,36 +38,35 @@ body {
 /*https://blog.devgenius.io/how-to-create-animated-birds-on-a-web-app-with-css-2415627acfa9*/
 /*https://codepen.io/matchboxhero/pen/RLebOY*/
 .bird {
-    background-image: url(./images/birds3.png); /*Removed white background from original image.*/
+    background-image: url(./images/birds3.png); /* Removed white background from original image. */
     background-size: auto 100%;
-    margin-top: -200px; /*Added to fit inside the empty space between Navigation Bar and Content.*/
-    width: 40px; /*Changed from 88px to 40px.*/
-    height: 65px; /*Changed from 125px to 65px.*/
+    margin-top: -200px; /* Added to fit inside the empty space between Navigation Bar and Content. */
+    width: 40px; /* Changed from 88px to 40px. */
+    height: 65px; /* Changed from 125px to 65px. */
     will-change: background-position;
-
     animation-name: fly-cycle;
-    animation-timing-function: steps(20); /*Made a change from 10 to 20 for smoother motion*/
+    animation-timing-function: steps(20); /* Made a change from 10 to 20 for smoother motion. */
     animation-iteration-count: infinite;
 }
 
 .bird-one {
-    animation-duration: 2s; /*Changed from 1s to 2s.*/
+    animation-duration: 2s; /* Changed from 1s to 2s. */
     animation-delay: -0.5s;
 }
 
 .bird-two {
-    animation-duration: 1s; /*Changed from 0.9s to 1s.*/
+    animation-duration: 1s; /* Changed from 0.9s to 1s. */
     animation-delay: -0.75s;
 }
 
 .bird-three {
     animation-duration: 1.25s;
-    animation-delay: -0.25;
+    animation-delay: -0.25s;
 }
 
 .bird-four {
     animation-duration: 1.1s;
-    animation-delay: -0.5;
+    animation-delay: -0.5s;
 }
 
 .bird-container {
@@ -76,7 +75,6 @@ body {
     left: -10%;
     transform: scale(0) translateX(-10vw);
     will-change: transform;
-
     animation-name: fly-right-one;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -84,7 +82,7 @@ body {
 
 .bird-container-one {
     animation-duration: 15s;
-    animation-delay: 5s; /*Changed from 0s to 5s.*/
+    animation-delay: 5s; /* Changed from 0s to 5s. */
 }
 
 .bird-container-two {
@@ -99,10 +97,10 @@ body {
 
 .bird-container-four {
     animation-duration: 16s;
-    animation-delay: 8.25s; /*Changed from 10.25s to 8.25s.*/
+    animation-delay: 8.25s; /* Changed from 10.25s to 8.25s. */
 }
 
-/*I still need to study and research more on how Animation, @keyframes and transform all work together.*/
+/* I still need to study and research more on how Animation, @keyframes, and transform all work together. */
 @keyframes fly-cycle {
     100% {
         background-position: -900px 0;
@@ -151,21 +149,28 @@ body {
     10% {
         transform: translateY(0vh) translateX(10vw) scale(0.4);
     }
+
     20% {
         transform: translateY(-4vh) translateX(30vw) scale(0.6);
     }
+
     30% {
         transform: translateY(1vh) translateX(50vw) scale(0.45);
     }
+
     40% {
         transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
     }
+
     50% {
         transform: translateY(0vh) translateX(90vw) scale(0.45);
     }
-    50% {
+
+    60% {
         transform: translateY(0vh) translateX(110vw) scale(0.45);
     }
+
+    
     100% {
         transform: translateY(0vh) translateX(110vw) scale(0.45);
     }
@@ -205,7 +210,7 @@ img:hover {
     flex-wrap: wrap;
     text-align: center;
     padding: 20px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #header h1 {
