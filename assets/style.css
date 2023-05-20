@@ -22,7 +22,7 @@ html {
 
 audio {
     width: 100px;
-    height: 20px;
+    height: 40px;
 }
 
 /*Background Image was very difficult to implement.  Had to figure out the sizing for Responsive Design.*/
@@ -203,6 +203,7 @@ img:hover {
     width: 450px;
     height: 350px;
     box-shadow: var(--image_shadow);
+    cursor: pointer;
 }
 
 #header {
@@ -210,7 +211,7 @@ img:hover {
     flex-wrap: wrap;
     text-align: center;
     padding: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #header h1 {
@@ -225,8 +226,7 @@ img:hover {
 
 #header h1 a:hover {
     color: var(--a_link_hover);
-    font-size: 41px;
-    font-weight: bold;
+    font-size: 40px;
     font-style: normal;
 }
 
@@ -262,6 +262,7 @@ img:hover {
     justify-content: space-around;
     margin-top: 400px;
     text-align: center;
+    cursor: pointer;
 }
 
 .content ul {
@@ -289,6 +290,7 @@ img:hover {
     margin-top: 100px;
     margin-bottom: 200px;
     text-align: center;
+    cursor: pointer;
 }
 
 .second-content h2:hover {
