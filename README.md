@@ -6,8 +6,8 @@
 * I was not completely prepared to create a professional portfolio yet, so I decided to build my own mockup portfolio instead.  This would give me a chance to practice my new skills I had recently learned in order to build something better in the future.  It was also a perfect opportunity to explore my creativity and right away I knew I wanted to give it an 80's/90's Anime theme and use it to tell a story.
 
 ## Installation:
-* For best User Experience.  Please have audio ON.  When you have reached the Portfolio page [JRB Portfolio](https://junel-balbin.github.io/Junel-Balbin-Portfolio/), Click or Press Play button <img src="./assets/images/playbutton.png"> located on the Upper Left of the Header next to Name.
-* On a web browser please follow the link to begin exploring. [JRB Portfolio](https://junel-balbin.github.io/Junel-Balbin-Portfolio/) 
+* For best User Experience.  Please have audio ON.  When you have reached the Portfolio page [JRB Portfolio](https://junel-balbin.github.io/BC2-Portfolio/), Click or Press Play button <img src="./assets/images/playbutton.png"> located on the Upper Left of the Header next to Name.
+* On a web browser please follow the link to begin exploring. [JRB Portfolio](https://junel-balbin.github.io/BC2-Portfolio/) 
 * Accessible on any mobile device and tablet.
 <img src="./assets/images/mobileview.gif">
 
