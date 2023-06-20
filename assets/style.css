@@ -22,7 +22,7 @@ html {
 
 audio {
     width: 100px;
-    height: 40px;
+    height: 30px;
 }
 
 /*Background Image was very difficult to implement.  Had to figure out the sizing for Responsive Design.*/
@@ -180,10 +180,15 @@ body {
 /*https://codepen.io/matchboxhero/pen/RLebOY*/
 /*Animation codes from Juan Carlos Pleitez & Steven Roberts*/
 
+li {
+    cursor: pointer;
+}
+
 h2 {
     color: white;
     font-size: 30px;
     font-family: var(--font);
+    cursor: pointer;
 }
 
 h2:hover {
@@ -262,7 +267,6 @@ img:hover {
     justify-content: space-around;
     margin-top: 400px;
     text-align: center;
-    cursor: pointer;
 }
 
 .content ul {
@@ -290,7 +294,6 @@ img:hover {
     margin-top: 100px;
     margin-bottom: 200px;
     text-align: center;
-    cursor: pointer;
 }
 
 .second-content h2:hover {
